@@ -1,0 +1,176 @@
+/* style.css */
+
+/* Estilos globales */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Fondo claro para toda la página */
+}
+
+header {
+    background-color: #f5f5f5 /* Fondo blanco para el header */
+    border-bottom 1px solid #dee2e6; /* Borde inferior gris claro */
+}
+
+header .logo {
+    max-height: 60px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #467A1F; /* Color de enlace  */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #31649f; /* Color de enlace al pasar el mouse */
+}
+
+.navbar-nav {
+    margin-left: 10px; /* Alinea los elementos de navegacion a la izquierda del logo */
+}
+
+/* para footer */
+
+footer {
+    background-color: #fff;
+    border-top: 1px solid #dee2e6;
+    padding: 20px 0;
+    color: #467A1F; /* Color de texto del footer */
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-content img {
+    margin-right: 10px;
+}
+
+.social-icons .nav-link {
+    padding: 0 10px;
+    color: #467A1F;
+}
+
+.footer-right a {
+    color: inherit;
+    margin-left: 10px;
+}
+
+/* Otros estilos específicos */
+
+#contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.parrafo1, .parrafo2 {
+    flex: 1 1 100%; /* Por defecto, las columnas ocupan el 100% en disp móviles */
+    padding: 10px;
+}
+
+.parrafo1 {
+    order: 1; 
+}
+
+.parrafo2 {
+    order: 2;
+}
+
+
+.parrafo2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .parrafo1, .parrafo2 {
+        flex: 1; 
+    }
+
+    .parrafo1 {
+        order: 1; 
+    }
+
+    .parrafo2 {
+        order: 2; 
+    }
+}
+
+/* Estilos específicos de la página "Inicio" */
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos específicos de la página "Quiénes Somos" */
+
+
+main h1 {
+    color: #467A1F;
+    text-align: center;
+    font-weight: 1000;
+}
+
+main h2 {
+    color: #343a40;
+    text-align: center;
+    font-weight: 500;
+}
+
+main h3 {
+    color:#467A1F
+}
+
+main .row {
+    margin-bottom: 30px;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+.underline {
+    width: 100%;
+    height: 4px;
+    background-color: #467A1F;
+    margin: 30px 0; 
+}
+
+/* Estilos específicos de la página "Nuestro servicios" */
+
+
+.titulo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+
+/* Media queries para los estilos en dispositivos mas chicso */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* imágenes en "Quiénes Somos" */
+
+main .row img {
+
+    height: 250px; /* altura */
+    object-fit: cover; /* mantiene la relación de aspecto */
+    width: 100%; /* ancho del contenedor */
+}
